@@ -12,10 +12,13 @@ body, html {
 </style>
 </head>
 <body>
-  <canvas id="canvas" width="100%" height="100%" style = "border:solid"></canvas>
+  <canvas id="canvas" width="100%" height="100%" style = "border:none"></canvas>
+
+  <button type="button" name="button" onclick="openFullscreen(document.getElementById('canvas'));   var starti = setInterval(update, 50)"> Start </button>
+
   <script type="text/javascript">
     console.log('loaded');
-    var starti = setInterval(update, 50)
+    //var starti = setInterval(update, 50)
 
     //var nothing = setInterval(update, 1000);
   </script>
